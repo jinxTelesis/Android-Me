@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  * was a project requirement but is not really used anymore
- * could remove 
+ * could remove
  */
 public class TitleFrag extends Fragment {
 
