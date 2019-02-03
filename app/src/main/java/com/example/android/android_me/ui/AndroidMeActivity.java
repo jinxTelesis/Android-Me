@@ -38,6 +38,9 @@ public class AndroidMeActivity extends AppCompatActivity implements
         HeadFragment.OnFragmentInteractionHeadListener,
 BodyFragment.OnFragmentInteractionBodyListener{
 
+    public static final String HEADC = "headc";
+    public static final String BODYC = "bodyc";
+    public static final String LEGC = "legc";
     // == number of body part choices ==
     private int headChoice = 12;
     private int bodyChoice = 12;
@@ -164,12 +167,13 @@ BodyFragment.OnFragmentInteractionBodyListener{
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
 
-        savedInstanceState.putInt("headc",headChoice);
-        savedInstanceState.putInt("bodyc", bodyChoice);
-        savedInstanceState.putInt("legc", legsChoice);
+        savedInstanceState.putInt(HEADC,headChoice);
+        savedInstanceState.putInt(BODYC, bodyChoice);
+        savedInstanceState.putInt(LEGC, legsChoice);
 
         super.onSaveInstanceState(savedInstanceState);
     }
+
 
 
     // == state information restored here after rotation ==
@@ -177,9 +181,9 @@ BodyFragment.OnFragmentInteractionBodyListener{
     public void onRestoreInstanceState(Bundle savedInstanceState) {
 
         super.onRestoreInstanceState(savedInstanceState);
-        headChoice = savedInstanceState.getInt("headc");
-        bodyChoice = savedInstanceState.getInt("bodyc");
-        legsChoice = savedInstanceState.getInt("legc");
+        headChoice = savedInstanceState.getInt(HEADC);
+        bodyChoice = savedInstanceState.getInt(BODYC);
+        legsChoice = savedInstanceState.getInt(LEGC);
     }
 }
 

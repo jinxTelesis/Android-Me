@@ -68,16 +68,13 @@ public class HeadFragment extends Fragment {
         listViewx.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //Toast.makeText(getActivity(),Integer.toString(position),Toast.LENGTH_LONG).show();
                 switch(position)
                 {
                     case 0:
-                        //Toast.makeText(getActivity(),Integer.toString(position),Toast.LENGTH_LONG).show();
                         mListener.ChoiceHead(0);
                         break;
 
                     case 1:
-                        //Toast.makeText(getActivity(),Integer.toString(position),Toast.LENGTH_LONG).show();
                         mListener.ChoiceHead(1);
                         break;
 

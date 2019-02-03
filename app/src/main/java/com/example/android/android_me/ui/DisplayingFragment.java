@@ -260,7 +260,6 @@ public class DisplayingFragment extends Fragment {
         {
             imageViewLegs.setImageResource(R.drawable.legs12);
         }
-        //Toast.makeText(getActivity(), "choice in exit " + Integer.toString(headChoice), Toast.LENGTH_SHORT).show();
 
         if(savedInstanceState != null)
         {
